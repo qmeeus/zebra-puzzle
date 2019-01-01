@@ -23,13 +23,13 @@ zebra_puzzle:-
 	Green #= Ivory + 1,					% The green house is immediately to the right of the ivory house.
 	OldGold #= Snails,					% The Old Gold smoker owns snails.
 	Kools #= Yellow,					% Kools are smoked in the yellow house.
-	Milk #= 3,							% Milk is drunk in the middle house.
+	Milk #= 3,						% Milk is drunk in the middle house.
 	Norwegian #= 1,						% The Norwegian lives in the first house.
-	abs(Chesterfield - Fox) #= 1,		% The man who smokes Chesterfields lives in the house next to the man with the fox.
-	abs(Kools - Horse) #= 1,			% Kools are smoked in the house next to the house where the horse is kept.
+	abs(Chesterfield - Fox) #= 1,				% The man who smokes Chesterfields lives in the house next to the man with the fox.
+	abs(Kools - Horse) #= 1,				% Kools are smoked in the house next to the house where the horse is kept.
 	Lucky #= Juice,						% The Lucky Strike smoker drinks orange juice.
-	Japanese #= Parliaments,			% The Japanese smokes Parliaments.
-	abs(Norwegian - Blue) #= 1,			% The Norwegian lives next to the blue house.
+	Japanese #= Parliaments,				% The Japanese smokes Parliaments.
+	abs(Norwegian - Blue) #= 1,				% The Norwegian lives next to the blue house.
 	
 	labeling([], Colors), labeling([], Origins), labeling([], Pets), labeling([], Beverages), labeling([], Cigarets),
 	display([1,2,3,4,5], _, [Colors, Origins, Pets, Beverages, Cigarets]).
